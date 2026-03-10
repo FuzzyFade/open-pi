@@ -11,7 +11,7 @@
     "clean": "shx rm -rf dist"
   },
   "dependencies": {
-    "@FuzzyFade/mini-lit": "^0.2.0",
+    "@mariozechner/mini-lit": "^0.2.0",
     "open-pi-ai": "file:../../ai",
     "open-pi-web-ui": "file:../",
     "@tailwindcss/vite": "^4.1.17",

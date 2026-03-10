@@ -1,6 +1,6 @@
-import { i18n } from "@FuzzyFade/mini-lit";
-import { Badge } from "@FuzzyFade/mini-lit/dist/Badge.js";
-import { Button } from "@FuzzyFade/mini-lit/dist/Button.js";
+import { i18n } from "@mariozechner/mini-lit";
+import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
+import { Button } from "@mariozechner/mini-lit/dist/Button.js";
 import { html, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { type Context, complete, getModel } from "open-pi-ai";

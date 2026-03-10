@@ -39,7 +39,7 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@jiti/jiti": "^2.6.2",
+		"jiti": "^2.6.2",
 		"open-pi-agent": "^0.57.1",
 		"open-pi-ai": "^0.57.1",
 		"open-pi-tui": "^0.57.1",

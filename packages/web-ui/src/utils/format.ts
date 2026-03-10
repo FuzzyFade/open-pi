@@ -1,4 +1,4 @@
-import { i18n } from "@FuzzyFade/mini-lit";
+import { i18n } from "@mariozechner/mini-lit";
 import type { Usage } from "open-pi-ai";
 
 export function formatCost(cost: number): string {

@@ -103,6 +103,13 @@ export interface StreamOptions {
 	 * For example, Anthropic uses `user_id` for abuse tracking and rate limiting.
 	 */
 	metadata?: Record<string, unknown>;
+	/**
+	 * Optional custom fetch implementation to use for API requests.
+	 * Allows intercepting or replacing HTTP requests, useful for custom auth schemes,
+	 * proxies, or TEE-based encrypted transports.
+	 * Supported by: openai-completions, openai-responses, anthropic.
+	 */
+	customFetch?: typeof fetch;
 }
 
 export type ProviderStreamOptions = StreamOptions & Record<string, unknown>;

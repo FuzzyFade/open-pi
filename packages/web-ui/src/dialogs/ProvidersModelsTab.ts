@@ -1,5 +1,5 @@
-import { i18n } from "@FuzzyFade/mini-lit";
-import { Select } from "@FuzzyFade/mini-lit/dist/Select.js";
+import { i18n } from "@mariozechner/mini-lit";
+import { Select } from "@mariozechner/mini-lit/dist/Select.js";
 import { html, type TemplateResult } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { getProviders } from "open-pi-ai";

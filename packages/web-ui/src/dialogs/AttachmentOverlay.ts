@@ -1,6 +1,6 @@
-import "@FuzzyFade/mini-lit/dist/ModeToggle.js";
-import { icon } from "@FuzzyFade/mini-lit";
-import { Button } from "@FuzzyFade/mini-lit/dist/Button.js";
+import "@mariozechner/mini-lit/dist/ModeToggle.js";
+import { icon } from "@mariozechner/mini-lit";
+import { Button } from "@mariozechner/mini-lit/dist/Button.js";
 import { renderAsync } from "docx-preview";
 import { html, LitElement } from "lit";
 import { state } from "lit/decorators.js";

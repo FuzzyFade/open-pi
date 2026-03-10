@@ -1,4 +1,4 @@
-import { i18n } from "@FuzzyFade/mini-lit";
+import { i18n } from "@mariozechner/mini-lit";
 import { type Static, Type } from "@sinclair/typebox";
 import { html } from "lit";
 import { createRef, ref } from "lit/directives/ref.js";

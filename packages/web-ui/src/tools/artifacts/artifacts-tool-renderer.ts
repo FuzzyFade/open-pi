@@ -1,9 +1,9 @@
-import "@FuzzyFade/mini-lit/dist/CodeBlock.js";
+import "@mariozechner/mini-lit/dist/CodeBlock.js";
 import { createRef, ref } from "lit/directives/ref.js";
 import { FileCode2 } from "lucide";
 import type { ToolResultMessage } from "open-pi-ai";
 import "../../components/ConsoleBlock.js";
-import { Diff } from "@FuzzyFade/mini-lit/dist/Diff.js";
+import { Diff } from "@mariozechner/mini-lit/dist/Diff.js";
 import { html, type TemplateResult } from "lit";
 import { i18n } from "../../utils/i18n.js";
 import { renderCollapsibleHeader, renderHeader } from "../renderer-registry.js";
