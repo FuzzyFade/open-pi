@@ -569,10 +569,73 @@ function createClient(
 	}
 
 	// API key auth
+	//
+	// Some third-party Anthropic-compatible proxies return valid SSE `data:` lines
+	// but omit the preceding `event:` field lines. The @anthropic-ai/sdk SSE parser
+	// only dispatches events when sse.event matches a known type — without `event:`
+	// lines, all events are silently dropped causing "request ended without sending
+	// any chunks". This customFetch injects missing `event:` lines from `data.type`.
+	const customFetch: typeof fetch = async (url, init) => {
+		const response = await fetch(url, init);
+		if (!response.body) return response;
+		const reader = response.body.getReader();
+		const encoder = new TextEncoder();
+		const decoder = new TextDecoder();
+		const stream = new ReadableStream({
+			async start(controller) {
+				let buffer = "";
+				let lastEventType: string | null = null;
+				while (true) {
+					const { done, value } = await reader.read();
+					if (done) {
+						if (buffer) controller.enqueue(encoder.encode(buffer));
+						controller.close();
+						break;
+					}
+					buffer += decoder.decode(value, { stream: true });
+					const lines = buffer.split("\n");
+					buffer = lines.pop() ?? "";
+					for (const line of lines) {
+						if (line.startsWith("event:")) {
+							lastEventType = line.slice(6).trim();
+							controller.enqueue(encoder.encode(line + "\n"));
+						} else if (line.startsWith("data:")) {
+							const dataStr = line.slice(5).trim();
+							if (dataStr && !lastEventType) {
+								try {
+									const parsed = JSON.parse(dataStr);
+									if (parsed.type) {
+										lastEventType = parsed.type;
+										controller.enqueue(encoder.encode(`event: ${parsed.type}\n`));
+									}
+								} catch {}
+							}
+							controller.enqueue(encoder.encode(line + "\n"));
+						} else if (line === "") {
+							lastEventType = null;
+							controller.enqueue(encoder.encode("\n"));
+						} else {
+							controller.enqueue(encoder.encode(line + "\n"));
+						}
+					}
+				}
+			},
+			cancel() {
+				reader.cancel();
+			},
+		});
+		return new Response(stream, {
+			status: response.status,
+			statusText: response.statusText,
+			headers: response.headers,
+		});
+	};
+
 	const client = new Anthropic({
 		apiKey,
 		baseURL: model.baseUrl,
 		dangerouslyAllowBrowser: true,
+		fetch: customFetch,
 		defaultHeaders: mergeHeaders(
 			{
 				accept: "application/json",
