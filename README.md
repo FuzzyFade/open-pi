@@ -11,7 +11,7 @@
 
 > **The open AI agent toolkit. No gatekeeping.**
 
-A community-maintained fork of [pi-mono](https://github.com/badlogic/pi-mono) — open to all contributors, including AI-assisted ones. We judge contributions by their quality, not their origin.
+A community-maintained fork of [pi-mono](https://github.com/FuzzyFade/open-pi) — open to all contributors, including AI-assisted ones. We judge contributions by their quality, not their origin.
 
 > **Looking for the coding agent?** See **[packages/coding-agent](packages/coding-agent)** for installation and usage.
 

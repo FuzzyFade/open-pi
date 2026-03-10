@@ -2,7 +2,7 @@
 
 Reusable web UI components for building AI chat interfaces powered by [open-pi-ai](../ai) and [open-pi-agent](../agent).
 
-Built with [mini-lit](https://github.com/badlogic/mini-lit) web components and Tailwind CSS v4.
+Built with [mini-lit](https://github.com/FuzzyFade/mini-lit) web components and Tailwind CSS v4.
 
 ## Features
 

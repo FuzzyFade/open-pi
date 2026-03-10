@@ -4,7 +4,7 @@
 
 Extensions and custom tools can render custom TUI components for interactive user interfaces. This page covers the component system and available building blocks.
 
-**Source:** [`open-pi-tui`](https://github.com/badlogic/pi-mono/tree/main/packages/tui)
+**Source:** [`open-pi-tui`](https://github.com/FuzzyFade/open-pi/tree/main/packages/tui)
 
 ## Component Interface
 
