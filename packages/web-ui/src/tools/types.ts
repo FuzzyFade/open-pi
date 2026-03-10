@@ -1,5 +1,5 @@
-import type { ToolResultMessage } from "@mariozechner/pi-ai";
 import type { TemplateResult } from "lit";
+import type { ToolResultMessage } from "open-pi-ai";
 
 export interface ToolRenderResult {
 	content: TemplateResult;

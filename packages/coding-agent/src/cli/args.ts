@@ -2,8 +2,8 @@
  * CLI argument parsing and help display
  */
 
-import type { ThinkingLevel } from "@mariozechner/pi-agent-core";
 import chalk from "chalk";
+import type { ThinkingLevel } from "open-pi-agent";
 import { APP_NAME, CONFIG_DIR_NAME, ENV_AGENT_DIR } from "../config.js";
 import { allTools, type ToolName } from "../core/tools/index.js";
 

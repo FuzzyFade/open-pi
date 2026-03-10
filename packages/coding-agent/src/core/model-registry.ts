@@ -2,6 +2,9 @@
  * Model registry - manages built-in and custom models, provides API key resolution.
  */
 
+import { type Static, Type } from "@sinclair/typebox";
+import AjvModule from "ajv";
+import { existsSync, readFileSync } from "fs";
 import {
 	type Api,
 	type AssistantMessageEventStream,
@@ -16,11 +19,8 @@ import {
 	registerApiProvider,
 	resetApiProviders,
 	type SimpleStreamOptions,
-} from "@mariozechner/pi-ai";
-import { registerOAuthProvider, resetOAuthProviders } from "@mariozechner/pi-ai/oauth";
-import { type Static, Type } from "@sinclair/typebox";
-import AjvModule from "ajv";
-import { existsSync, readFileSync } from "fs";
+} from "open-pi-ai";
+import { registerOAuthProvider, resetOAuthProviders } from "open-pi-ai/oauth";
 import { join } from "path";
 import { getAgentDir } from "../config.js";
 import type { AuthStorage } from "./auth-storage.js";

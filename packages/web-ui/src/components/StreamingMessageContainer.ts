@@ -1,7 +1,7 @@
-import type { AgentMessage, AgentTool } from "@mariozechner/pi-agent-core";
-import type { ToolResultMessage } from "@mariozechner/pi-ai";
 import { html, LitElement } from "lit";
 import { property, state } from "lit/decorators.js";
+import type { AgentMessage, AgentTool } from "open-pi-agent";
+import type { ToolResultMessage } from "open-pi-ai";
 
 export class StreamingMessageContainer extends LitElement {
 	@property({ type: Array }) tools: AgentTool[] = [];

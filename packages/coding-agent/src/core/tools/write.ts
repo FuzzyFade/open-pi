@@ -1,6 +1,6 @@
-import type { AgentTool } from "@mariozechner/pi-agent-core";
 import { type Static, Type } from "@sinclair/typebox";
 import { mkdir as fsMkdir, writeFile as fsWriteFile } from "fs/promises";
+import type { AgentTool } from "open-pi-agent";
 import { dirname } from "path";
 import { resolveToCwd } from "./path-utils.js";
 

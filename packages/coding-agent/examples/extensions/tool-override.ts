@@ -20,11 +20,11 @@
  *   pi -e ./tool-override.ts
  */
 
-import type { TextContent } from "@mariozechner/pi-ai";
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { Type } from "@sinclair/typebox";
 import { appendFileSync, constants, readFileSync } from "fs";
 import { access, readFile } from "fs/promises";
+import type { TextContent } from "open-pi-ai";
+import type { ExtensionAPI } from "open-pi-coding-agent";
 import { homedir } from "os";
 import { join, resolve } from "path";
 

@@ -1,6 +1,6 @@
 import { LMStudioClient } from "@lmstudio/sdk";
-import type { Model } from "@mariozechner/pi-ai";
 import { Ollama } from "ollama/browser";
+import type { Model } from "open-pi-ai";
 
 /**
  * Discover models from an Ollama server.

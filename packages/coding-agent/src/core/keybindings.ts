@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from "fs";
 import {
 	DEFAULT_EDITOR_KEYBINDINGS,
 	type EditorAction,
@@ -6,8 +7,7 @@ import {
 	type KeyId,
 	matchesKey,
 	setEditorKeybindings,
-} from "@mariozechner/pi-tui";
-import { existsSync, readFileSync } from "fs";
+} from "open-pi-tui";
 import { join } from "path";
 import { getAgentDir } from "../config.js";
 

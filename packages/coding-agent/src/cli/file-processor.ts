@@ -3,8 +3,8 @@
  */
 
 import { access, readFile, stat } from "node:fs/promises";
-import type { ImageContent } from "@mariozechner/pi-ai";
 import chalk from "chalk";
+import type { ImageContent } from "open-pi-ai";
 import { resolve } from "path";
 import { resolveReadPath } from "../core/tools/path-utils.js";
 import { formatDimensionNote, resizeImage } from "../utils/image-resize.js";

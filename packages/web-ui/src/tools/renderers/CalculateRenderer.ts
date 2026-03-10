@@ -1,6 +1,6 @@
-import type { ToolResultMessage } from "@mariozechner/pi-ai";
 import { html } from "lit";
 import { Calculator } from "lucide";
+import type { ToolResultMessage } from "open-pi-ai";
 import { i18n } from "../../utils/i18n.js";
 import { renderHeader } from "../renderer-registry.js";
 import type { ToolRenderer, ToolRenderResult } from "../types.js";

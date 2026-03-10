@@ -598,7 +598,7 @@ function createClient(
 					for (const line of lines) {
 						if (line.startsWith("event:")) {
 							lastEventType = line.slice(6).trim();
-							controller.enqueue(encoder.encode(line + "\n"));
+							controller.enqueue(encoder.encode(`${line}\n`));
 						} else if (line.startsWith("data:")) {
 							const dataStr = line.slice(5).trim();
 							if (dataStr && !lastEventType) {
@@ -610,12 +610,12 @@ function createClient(
 									}
 								} catch {}
 							}
-							controller.enqueue(encoder.encode(line + "\n"));
+							controller.enqueue(encoder.encode(`${line}\n`));
 						} else if (line === "") {
 							lastEventType = null;
 							controller.enqueue(encoder.encode("\n"));
 						} else {
-							controller.enqueue(encoder.encode(line + "\n"));
+							controller.enqueue(encoder.encode(`${line}\n`));
 						}
 					}
 				}

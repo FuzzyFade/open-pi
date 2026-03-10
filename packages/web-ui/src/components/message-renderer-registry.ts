@@ -1,5 +1,5 @@
-import type { AgentMessage } from "@mariozechner/pi-agent-core";
 import type { TemplateResult } from "lit";
+import type { AgentMessage } from "open-pi-agent";
 
 // Extract role type from AppMessage union
 export type MessageRole = AgentMessage["role"];
