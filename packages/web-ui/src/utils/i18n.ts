@@ -1,6 +1,6 @@
-import { defaultEnglish, defaultGerman, type MiniLitRequiredMessages, setTranslations } from "@mariozechner/mini-lit";
+import { defaultEnglish, defaultGerman, type MiniLitRequiredMessages, setTranslations } from "@FuzzyFade/mini-lit";
 
-declare module "@mariozechner/mini-lit" {
+declare module "@FuzzyFade/mini-lit" {
 	interface i18nMessages extends MiniLitRequiredMessages {
 		Free: string;
 		"Input Required": string;
@@ -650,4 +650,4 @@ export const translations = {
 
 setTranslations(translations);
 
-export * from "@mariozechner/mini-lit/dist/i18n.js";
+export * from "@FuzzyFade/mini-lit/dist/i18n.js";

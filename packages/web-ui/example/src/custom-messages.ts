@@ -1,4 +1,4 @@
-import { Alert } from "@mariozechner/mini-lit/dist/Alert.js";
+import { Alert } from "@FuzzyFade/mini-lit/dist/Alert.js";
 import { html } from "lit";
 import type { Message } from "open-pi-ai";
 import type { AgentMessage, MessageRenderer } from "open-pi-web-ui";

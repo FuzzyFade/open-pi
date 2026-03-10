@@ -1,8 +1,8 @@
-import { icon } from "@mariozechner/mini-lit";
-import { Badge } from "@mariozechner/mini-lit/dist/Badge.js";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { DialogHeader } from "@mariozechner/mini-lit/dist/Dialog.js";
-import { DialogBase } from "@mariozechner/mini-lit/dist/DialogBase.js";
+import { icon } from "@FuzzyFade/mini-lit";
+import { Badge } from "@FuzzyFade/mini-lit/dist/Badge.js";
+import { Button } from "@FuzzyFade/mini-lit/dist/Button.js";
+import { DialogHeader } from "@FuzzyFade/mini-lit/dist/Dialog.js";
+import { DialogBase } from "@FuzzyFade/mini-lit/dist/DialogBase.js";
 import { html, type PropertyValues, type TemplateResult } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { createRef, ref } from "lit/directives/ref.js";

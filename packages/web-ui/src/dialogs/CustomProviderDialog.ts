@@ -1,9 +1,9 @@
-import { i18n } from "@mariozechner/mini-lit";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { DialogBase } from "@mariozechner/mini-lit/dist/DialogBase.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
-import { Label } from "@mariozechner/mini-lit/dist/Label.js";
-import { Select } from "@mariozechner/mini-lit/dist/Select.js";
+import { i18n } from "@FuzzyFade/mini-lit";
+import { Button } from "@FuzzyFade/mini-lit/dist/Button.js";
+import { DialogBase } from "@FuzzyFade/mini-lit/dist/DialogBase.js";
+import { Input } from "@FuzzyFade/mini-lit/dist/Input.js";
+import { Label } from "@FuzzyFade/mini-lit/dist/Label.js";
+import { Select } from "@FuzzyFade/mini-lit/dist/Select.js";
 import { html, type TemplateResult } from "lit";
 import { state } from "lit/decorators.js";
 import type { Model } from "open-pi-ai";

@@ -1,4 +1,4 @@
-import "@mariozechner/mini-lit/dist/ThemeToggle.js";
+import "@FuzzyFade/mini-lit/dist/ThemeToggle.js";
 import { html, render } from "lit";
 import { Bell, History, Plus, Settings } from "lucide";
 import { Agent, type AgentMessage } from "open-pi-agent";
@@ -22,9 +22,9 @@ import {
 	setAppStorage,
 } from "open-pi-web-ui";
 import "./app.css";
-import { icon } from "@mariozechner/mini-lit";
-import { Button } from "@mariozechner/mini-lit/dist/Button.js";
-import { Input } from "@mariozechner/mini-lit/dist/Input.js";
+import { icon } from "@FuzzyFade/mini-lit";
+import { Button } from "@FuzzyFade/mini-lit/dist/Button.js";
+import { Input } from "@FuzzyFade/mini-lit/dist/Input.js";
 import { createSystemNotification, customConvertToLlm, registerCustomMessageRenderers } from "./custom-messages.js";
 
 // Register custom message renderers

@@ -65,7 +65,7 @@ function getCacheControl(
 const claudeCodeVersion = "2.1.62";
 
 // Claude Code 2.x tool names (canonical casing)
-// Source: https://cchistory.mariozechner.at/data/prompts-2.1.11.md
+// Source: https://cchistory.FuzzyFade.at/data/prompts-2.1.11.md
 // To update: https://github.com/badlogic/cchistory
 const claudeCodeTools = [
 	"Read",
