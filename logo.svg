@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- P shape -->
+  <path fill="#fff" fill-rule="evenodd" d="
+    M130 130 H480 V370 H365 V480 H250 V600 H130 Z
+    M250 250 V370 H365 V250 Z
+  "/>
+  <!-- i dot -->
+  <path fill="#fff" d="M480 370 H600 V600 H480 Z"/>
+  <!-- open arc -->
+  <path fill="none" stroke="#fff" stroke-width="55" stroke-linecap="round"
+    d="M 660 80 A 320 320 0 0 1 660 720"/>
+</svg>

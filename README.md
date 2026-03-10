@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/FuzzyFade/open-pi">
-    <img src="https://shittycodingagent.ai/logo.svg" alt="open-pi logo" width="128">
+    <img src="./logo.svg" alt="open-pi logo" width="128">
   </a>
 </p>
 <p align="center">
